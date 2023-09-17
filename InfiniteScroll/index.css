@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monsterrat', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #333;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top:500px;
+    
+   
+    right: 600px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .image-container {
+        margin: 10px;
+    }
+}
